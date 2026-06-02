@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+.idea/
+.vscode/
+#Y_MEN9_MAK_POETOMY_ETA_WTUKA_SNIZY
+.DS_Store
