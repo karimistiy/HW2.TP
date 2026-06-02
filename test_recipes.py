@@ -132,12 +132,12 @@ def test_shopping_list_get_list_merge():
 def test_shopping_list_add():
     echpochmak = Recipe("Эчпочмак")
     echpochmak.add_ingredient(Ingredient("Говядина", 400, "г"))
-    chak_chak = Recipe("Чак-чак")
-    chak_chak.add_ingredient(Ingredient("Мёд", 200, "г"))
+    chakchak = Recipe("Чак-чак")
+    chakchak.add_ingredient(Ingredient("Мёд", 200, "г"))
     sl1=ShoppingList()
     sl1.add_recipe(echpochmak, 1)
     sl2=ShoppingList()
-    sl2.add_recipe(chak_chak, 1)
+    sl2.add_recipe(chakchak, 1)
     sl3=sl1+sl2
     assert len(sl3.get_list())==2
 def test_shopping_list_add_originals_unchanged():
@@ -148,4 +148,5 @@ def test_shopping_list_add_originals_unchanged():
     sl2=ShoppingList()
     sl1+sl2
     assert len(sl1.get_list())==1
-    
+
+
